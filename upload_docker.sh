@@ -6,15 +6,15 @@
 # Step 1:
 # Create dockerpath
 # dockerpath=<your docker ID/path>
-dockerpath=my-project
+dockerpath=tamln2/my-project
 
 # Step 2:  
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
-docker login -u tamln2
-docker tag my-project $dockerpath:lastest
+sudo docker login -u tamln2
+sudo docker tag my-project $dockerpath:lastest
 
 # Step 3:
 # Push image to a docker repository
 
-docker push $dockerpath:lastest
+sudo docker push $dockerpath:lastest
