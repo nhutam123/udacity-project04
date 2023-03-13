@@ -11,10 +11,10 @@ dockerpath=tamln2/my-project
 # Step 2:  
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
-sudo docker login -u tamln2
-sudo docker tag my-project $dockerpath:lastest
+docker login -u tamln2
+docker tag my-project $dockerpath:latest
 
 # Step 3:
 # Push image to a docker repository
 
-sudo docker push $dockerpath:lastest
+docker push $dockerpath:latest
