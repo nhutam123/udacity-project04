@@ -1,3 +1,13 @@
+ubuntu@ip-172-31-29-242:~/udacity-project04$ ./run_kubernetes.sh
+tamln2
+Error from server (AlreadyExists): pods "my-project" already exists
+tamln3
+NAME         READY   STATUS    RESTARTS   AGE
+my-project   1/1     Running   0          11m
+Forwarding from 127.0.0.1:8080 -> 80
+Forwarding from [::1]:8080 -> 80
+Handling connection for 8080
+
 ubuntu@ip-172-31-29-242:~/udacity-project04/output_txt_files$ kubectl logs my-project
  * Serving Flask app "app" (lazy loading)
  * Environment: production
